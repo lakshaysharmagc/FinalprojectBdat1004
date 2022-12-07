@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html {
+            box-sizing: border-box;
+            width:100%;
+            overflow-x:hidden;
+            height:0px;
+            padding:0px;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 15px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height:548px;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+            .container::after, .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            .button:hover {
+                background-color: #555;
+            }
+        body {
+            background-image: url('/static/about.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow-y: hidden; /* Hide vertical scrollbar */
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+
+    </style>
+</head>
+<body>
+    <p></p>
+    <h2 style="font-family:Times New Roman,serif;text-align:center">BDAT 1004 Data Programming Final Project</h2>
+    <p></p>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="/static/lakshay.jpeg" alt="Lakshay" style="height:60%;width:80%;margin-left:45px;margin-top:15px">
+                <div class="container">
+                    <h1 style="font-family: Times New Roman,serif; text-align:center; font-size:25px"><b>Lakshay Sharma</b></h1>
+                    <p style ="text-align:center" class="title">200727728</p>
+                    <p style ="text-align:center">Team Lead</p>
+                    <p style ="text-align:center">lakshay.sharma@mygeorgian.ca</p>
+                    <p><a href='https://www.linkedin.com/in/lakshaysharmals/'><button class="button">Contact</button></a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="/static/heer.jpeg" alt="Heer" style="height:60%;width:80%;margin-left:45px;margin-top:15px;">
+                <div class="container">
+                    <h1 style="font-family:Times New Roman,serif; text-align:center; font-size:25px"><b>Heer Patel</b></h1>
+                    <p style ="text-align:center" class="title">200528104</p>
+                    <p style ="text-align:center">Data Analyst</p>
+                    <p style ="text-align:center">200528104@student.georgianc.on.ca</p>
+                    <p><a href='https://www.linkedin.com/in/heer-patel-9a59a3198/'><button class="button">Contact</button></a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="/static/rohan.jpeg" alt="Rohan" style="height:60%;width:80%;margin-left:45px;margin-top:15px">
+                <div class="container">
+                    <h1 style="font-family:Times New Roman,serif; text-align:center; font-size:25px"><b>Rohan Hasnani</b></h1>
+                    <p style ="text-align:center" class="title">200493036</p>
+                    <p style ="text-align:center">Business Analyst</p>
+                    <p style ="text-align:center">200493036@mygeorgian.ca</p>
+                    <p><a href='https://www.linkedin.com/in/rohan-hasnani/'><button class="button">Contact</button></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+{% endblock %}
